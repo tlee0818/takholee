@@ -19,7 +19,7 @@ const Header = () => {
           <img src = {thl_profile} alt = "Picture of Tak-Ho Lee"/>
         </div>
 
-        <a href = "contact" className = 'scroll_down'>Scroll Down</a>
+        <a href = "#contact" className = 'scroll_down'>Scroll Down</a>
       </div>
     </header>
   )
