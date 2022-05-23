@@ -7,7 +7,7 @@ import thl_profile from '../../assets/thl_profile.jpg'
 const Header = () => {
   return (
     <header>
-      <div className="container header__conatiner">
+      <div className="container header__container">
         <h5>Hello I'm</h5>
         <h1>Tak-Ho</h1>
         <h5 className = "text-light">Software Engineer</h5>
