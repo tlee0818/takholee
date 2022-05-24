@@ -5,8 +5,8 @@ import Timeline from './Timeline'
 const Experience = () => {
   return (
     <section id = "experience">
-      <h5>My Skills</h5>
-      <h2>My Experience</h2>
+      <h5>My relevant (or interesting)</h5>
+      <h2>Experience</h2>
 
       <div className="container experience-container">
         <Timeline />
