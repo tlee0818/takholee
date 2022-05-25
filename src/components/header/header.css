@@ -41,7 +41,7 @@ header {
 /* img */
 
 
-.my-photo {
+/* .my-photo {
     background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
     height: 30rem;
@@ -51,7 +51,21 @@ header {
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
+} */
 
+.my-photo{
+    padding-left: -10%;
+    padding-right: -100%;
+}
+
+.my-photo > img{
+    width: 25rem;
+    height: auto;
+    position: absolute;
+    left: calc(50% - 12.5rem);
+    margin-top: 3.5rem;
+    border-radius: 5%;
+    border: 3px solid var(--color-light);
 }
 
 /* scroll down link */
