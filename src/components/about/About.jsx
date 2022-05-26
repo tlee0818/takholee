@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import ME from "../../assets/me-about.jpeg";
-import { FaAward } from "react-icons/fa";
+import { GiSouthKorea } from "react-icons/gi";
 import { FiAward } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
 
@@ -19,18 +19,18 @@ const About = () => {
         </div>
 
         <div className="about-content">
-          <div className="about-cards">
+          {/* <div className="about-cards">
             <article className="about-card">
-              <FaAward className="about-icon" />
-              <h5>Experience</h5>
-              <small>3+ Years of Work</small>{" "}
+              <GiSouthKorea className="about-icon" />
+              <h5>South Korea</h5>
+              <small>Straight from Seoul</small>{" "}
             </article>
 
             <article className="about-card">
               {" "}
               <FiAward className="about-icon" />
-              <h5>Clients</h5>
-              <small>300+ Clients</small>
+              <h5>Carnegie Mellon</h5>
+              <small>Info Systems</small>
             </article>
 
             <article className="about-card">
@@ -38,9 +38,17 @@ const About = () => {
               <h5>Projects</h5>
               <small>80+ Projects</small>
             </article>
-          </div>
-          <p>Lorem ipsum</p>
-          <a href="#contact" className="btn btn-primary">
+          </div> */}
+          <p><h3>Hello!</h3>
+          I'm Tak-Ho, pronounced just like the Mexican food taco.
+          <br/><br/>
+          Though I first enrolled as a business major, it was after taking an introductory Computer Science course that I quickly fell in love with the field.
+          <br/><br/>
+          My Coursework have taught me that software engineering is much more than a familiarity with certain languages and libraries. It is the ability to understand user needs and fluently read documentations that scale better over time.
+          <br/><br/>
+          In my spare time, I love working out and making <a href="https://www.youtube.com/channel/UCQTSMCK_ivSxVmK8sNy96CA">videos</a>.
+          </p>
+          <a href="#contacts" className="btn btn-primary">
             Let's Talk
           </a>
         </div>

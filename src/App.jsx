@@ -7,12 +7,15 @@ import Experience from "./components/experience/Experience";
 import Projects from "./components/projects/Projects";
 import Contacts from "./components/contacts/Contacts";
 import Footer from "./components/footer/Footer";
-import Draggable, { DraggableCore } from "react-draggable";
+import { useRef, useOnScreen } from "react";
 
 function App() {
+
+
+
   return (
     <div>
-      <Header />
+      <Header/>
       <Nav/>
       <About />
       <Experience />
