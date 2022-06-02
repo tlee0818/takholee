@@ -67,7 +67,7 @@ const Contacts = () => {
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea
             name="message"
-            rows="7"
+            rows="9"
             required
             placeholder="Your Message"
           ></textarea>

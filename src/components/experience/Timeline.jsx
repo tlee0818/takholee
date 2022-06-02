@@ -88,7 +88,7 @@ const Timeline = () => {
       },
     },
     {
-      text: "SWE Intern at Loom",
+      text: "SWE Intern at Loom (RESCINDED)",
       date: "Summer 2022",
       category: {
         tag: "work",

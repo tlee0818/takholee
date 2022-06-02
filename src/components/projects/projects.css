@@ -33,6 +33,9 @@
 }
 
 .project-item-desc{
+    margin-bottom: 2rem;
+}
+.desc{
     margin-bottom: 1rem;
 }
 

@@ -46,7 +46,7 @@ const About = () => {
           <br/><br/>
           My Coursework have taught me that software engineering is much more than a familiarity with certain languages and libraries. It is the ability to understand user needs and fluently read documentations that scale better over time.
           <br/><br/>
-          In my spare time, I love working out and making <a href="https://www.youtube.com/channel/UCQTSMCK_ivSxVmK8sNy96CA">videos</a>.
+          In my spare time, I love working out and making <a href="https://www.youtube.com/channel/UCQTSMCK_ivSxVmK8sNy96CA" target="_blank">videos</a>.
           </p>
           <a href="#contacts" className="btn btn-primary">
             Let's Talk

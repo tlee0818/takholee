@@ -11,8 +11,35 @@ import { BsGripHorizontal } from "react-icons/bs";
 import { useState, useEffect, useRef } from "react";
 import Draggable, { DraggableCore } from "react-draggable";
 
-const Nav = () => {
+const Nav = ( {inViews}) => {
   const [activeNav, setActiveNav] = useState("#");
+
+  // console.log(Object.entries(inViews).map(item => {
+  //   console.log(item)
+  // }))
+
+  useEffect(()=>{
+
+    if(inViews[0]){
+      setActiveNav("#")
+    }
+    if(inViews[1]){
+      setActiveNav("#about")
+    }
+    if(inViews[2]){
+      setActiveNav("#experience")
+    }
+    if(inViews[3]){
+      console.log("hi")
+      setActiveNav("#projects")
+    }
+    if(inViews[4]){
+      setActiveNav("#contacts")
+    }
+
+  }, inViews)
+
+
 
   return (
         <Draggable>
