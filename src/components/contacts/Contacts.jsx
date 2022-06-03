@@ -4,48 +4,50 @@ import { MdOutlineEmail } from "react-icons/md";
 import { BsLinkedin, BsInstagram } from "react-icons/bs";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contacts = () => {
   const form = useRef();
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [message, setMessage] = useState("")
-
-
-  const notify = () => toast.success('Message Sent!', {
-    position: "top-right",
-    autoClose: 5000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: false,
-    draggable: true,
-    progress: undefined,
-    });
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const clearFields = () => {
-    setName("")
-    setEmail("")
-    setMessage("")
-  }
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
 
   const handleChangeName = (e) => {
     setName(e.target.value);
-  }
+  };
   const handleChangeEmail = (e) => {
     setEmail(e.target.value);
-  }
+  };
 
   const handleChangeMessage = (e) => {
     setMessage(e.target.value);
-  }
+  };
 
+  const notify = (e) =>
+    toast.promise(sendEmail(e), {
+      pending: "Message is sending",
+      success: "Message sent!",
+      error: "There was a problem",
+      position: "top-right",
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,
+    });
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
+    return emailjs
       .sendForm(
         "service_ittwpgs",
         "template_ck1euao",
@@ -54,16 +56,15 @@ const Contacts = () => {
       )
       .then(
         (result) => {
-          notify()
           clearFields()
-          console.log(result.text);
+          return result;
         },
         (error) => {
-          console.log(error.text);
+          return error;
         }
       );
   };
-  
+
   return (
     <section id="contacts">
       <h5>always looking for exciting opportunities</h5>
@@ -97,10 +98,24 @@ const Contacts = () => {
             </article>
           </a>
         </div>
-        
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="name" placeholder="Your Name" value={name} onChange={handleChangeName} required />
-          <input type="email" name="email" placeholder="Your Email" value={email} onChange={handleChangeEmail} required />
+
+        <form ref={form} onSubmit={notify}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            value={name}
+            onChange={handleChangeName}
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            value={email}
+            onChange={handleChangeEmail}
+            required
+          />
           <textarea
             name="message"
             rows="9"
@@ -110,7 +125,7 @@ const Contacts = () => {
             onChange={handleChangeMessage}
           ></textarea>
           <button type="submit" className="btn btn-primary">
-          <ToastContainer />
+            <ToastContainer />
             Send Message
           </button>
         </form>
