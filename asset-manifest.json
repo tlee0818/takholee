@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/takholee/static/css/main.dc069623.css",
+    "main.js": "/takholee/static/js/main.d4f3e394.js",
+    "static/js/787.6efb526c.chunk.js": "/takholee/static/js/787.6efb526c.chunk.js",
+    "static/media/port-tetris-bot.png": "/takholee/static/media/port-tetris-bot.2b3fd1765e35e3289af5.png",
+    "static/media/port-oss.png": "/takholee/static/media/port-oss.1cfcfffabe9e8043ec2b.png",
+    "static/media/me-about.jpeg": "/takholee/static/media/me-about.1945cda1e6e403c016b6.jpeg",
+    "static/media/port-audio-reactive.png": "/takholee/static/media/port-audio-reactive.307f1115722671297e9d.png",
+    "static/media/port-image-analyzer.png": "/takholee/static/media/port-image-analyzer.e962e6076786c8d1616a.png",
+    "static/media/port-tartanhacks.png": "/takholee/static/media/port-tartanhacks.ae56ba02dd25df323345.png",
+    "static/media/thl_resume.pdf": "/takholee/static/media/thl_resume.11fcf5028b6ba1394381.pdf",
+    "static/media/port-lda.png": "/takholee/static/media/port-lda.d32a5b2a8a68f8bc71d9.png",
+    "static/media/thl_profile.jpg": "/takholee/static/media/thl_profile.be283587056da0fad0a9.jpg",
+    "static/media/bg-texture.png": "/takholee/static/media/bg-texture.d96df2cc1c641fcc67dc.png",
+    "static/media/logo.svg": "/takholee/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/takholee/index.html",
+    "main.dc069623.css.map": "/takholee/static/css/main.dc069623.css.map",
+    "main.d4f3e394.js.map": "/takholee/static/js/main.d4f3e394.js.map",
+    "787.6efb526c.chunk.js.map": "/takholee/static/js/787.6efb526c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc069623.css",
+    "static/js/main.d4f3e394.js"
+  ]
+}
