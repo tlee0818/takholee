@@ -1,12 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contacts.css";
 import { MdOutlineEmail } from "react-icons/md";
 import { BsLinkedin, BsInstagram } from "react-icons/bs";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contacts = () => {
   const form = useRef();
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
+
+
+  const notify = () => toast.success('Message Sent!', {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: false,
+    draggable: true,
+    progress: undefined,
+    });
+
+  const clearFields = () => {
+    setName("")
+    setEmail("")
+    setMessage("")
+  }
+
+  const handleChangeName = (e) => {
+    setName(e.target.value);
+  }
+  const handleChangeEmail = (e) => {
+    setEmail(e.target.value);
+  }
+
+  const handleChangeMessage = (e) => {
+    setMessage(e.target.value);
+  }
+
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,6 +54,8 @@ const Contacts = () => {
       )
       .then(
         (result) => {
+          notify()
+          clearFields()
           console.log(result.text);
         },
         (error) => {
@@ -61,17 +97,20 @@ const Contacts = () => {
             </article>
           </a>
         </div>
-
+        
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="text" name="name" placeholder="Your Name" value={name} onChange={handleChangeName} required />
+          <input type="email" name="email" placeholder="Your Email" value={email} onChange={handleChangeEmail} required />
           <textarea
             name="message"
             rows="9"
             required
             placeholder="Your Message"
+            value={message}
+            onChange={handleChangeMessage}
           ></textarea>
           <button type="submit" className="btn btn-primary">
+          <ToastContainer />
             Send Message
           </button>
         </form>

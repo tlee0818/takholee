@@ -19,6 +19,10 @@
   --container-width-md: 86%;
   --container-width-sm: 90%;
 
+  --toastify-color-success: #486d48;
+  --toastify-text-color-success: #dad7cd;
+
+
   --trasition: all 400ms ease
 }
 
