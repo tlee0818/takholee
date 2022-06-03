@@ -82,12 +82,12 @@ const Projects = () => {
                 <p>Tech: {tech}</p>
               </div>
               <div className="project-item-cta">
-                <a href={github} className="btn" target="_blank">
+                {github !== "" && <a href={github} className="btn" target="_blank">
                   Github
-                </a>
-                <a href={demo} className="btn btn-primary" target="_blank">
+                </a>}
+                {demo !== "" && <a href={demo} className="btn btn-primary" target="_blank">
                   Demo
-                </a>
+                </a>}
               </div>
             </article>
           );
