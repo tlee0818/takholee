@@ -1,6 +1,12 @@
 import React from "react";
 import "./projects.css";
-import IMG1 from "../../assets/portfolio1.jpg";
+import IMG1 from "../../assets/port-tetris-bot.png";
+import IMG2 from "../../assets/port-audio-reactive.png";
+import IMG3 from "../../assets/port-tartanhacks.png";
+import IMG4 from "../../assets/port-image-analyzer.png";
+import IMG5 from "../../assets/port-lda.png";
+import IMG6 from "../../assets/port-oss.png";
+
 
 const Projects = () => {
   const data = [
@@ -15,7 +21,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      image: IMG1,
+      image: IMG2,
       title: "Audio-Reactive Filter",
       text: "Built a Python program that takes a  picture and a music clip. The program returns a video of the filter applied on the image, with the music in the background; the filter on the image will change according to the beat/melody of the song.",
       tech: "Python3, pyAudio, aubio, soundfile, openCV, tkInter",
@@ -24,7 +30,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      image: IMG1,
+      image: IMG3,
       title: "TartanHack Dashboard",
       text: "Contributed to CMU's largest hackathon's dashboard app using Dart and Flutter. Responsible for Events Page",
       tech: "Dart, Flutter, Swagger API",
@@ -33,7 +39,7 @@ const Projects = () => {
     },
     {
       id: 4,
-      image: IMG1,
+      image: IMG4,
       title: "Image Analyzer",
       text: "Created a data visualization framework with data/visualization plugins for image analysis. Used Clarifai's machine learning API (clustering) to analyze input image and returned color density profile of the picture",
       tech: "Typescript (Promises), Express, Handlebars, Bootstrap4",
@@ -42,7 +48,7 @@ const Projects = () => {
     },
     {
       id: 5,
-      image: IMG1,
+      image: IMG5,
       title: "LDAPA Data Collection",
       text: "Collected Learning Disability resources by webscraping for useful information.Used Airtable as the data repository for the scraped information",
       tech: "Python3, BeautifulSoup4, Selenium",
@@ -51,7 +57,7 @@ const Projects = () => {
     },
     {
       id: 6,
-      image: IMG1,
+      image: IMG6,
       title: "Open Source Sustainability",
       text: "Gathered repository data of open-source projects for PyPi and Packagists ecosystems via their respective APIs, webscraping and reverse-Github-searching. Performed various regression analysis to identify life cycles of open source projects.",
       tech: "Python3, BeautifulSoup4, Selenium, Github Search API",

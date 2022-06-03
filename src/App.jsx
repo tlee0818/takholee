@@ -20,15 +20,14 @@ function App() {
     threshold: 0.5,
   });
   const [projectsRef, projectsInView, projectsEntry] = useInView({
-    threshold: 0.5,
+    threshold: 0.1,
   });
   const [contactsRef, contactsInView, contactsEntry] = useInView({
     threshold: 0.5,
   });
 
-  
   const inViews = [headerInView, aboutInView, experienceInView, projectsInView, contactsInView]
-
+  
   return (
     <div>
       <div ref = {headerRef}>

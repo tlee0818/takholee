@@ -10,6 +10,7 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--trasition);
+    height: fit-content;
 }
 
 .project-item:hover{
@@ -20,6 +21,8 @@
 .project-item-image{
     border-radius: 1.5rem;
     overflow: hidden;
+    background: var(--color-white);
+    vertical-align: middle;
 }
 
 .project-item h3{
