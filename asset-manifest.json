@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/takholee/static/css/main.dc069623.css",
-    "main.js": "/takholee/static/js/main.d4f3e394.js",
+    "main.css": "/takholee/static/css/main.eccecd51.css",
+    "main.js": "/takholee/static/js/main.59ddbb1b.js",
     "static/js/787.6efb526c.chunk.js": "/takholee/static/js/787.6efb526c.chunk.js",
     "static/media/port-tetris-bot.png": "/takholee/static/media/port-tetris-bot.2b3fd1765e35e3289af5.png",
     "static/media/port-oss.png": "/takholee/static/media/port-oss.1cfcfffabe9e8043ec2b.png",
@@ -15,12 +15,12 @@
     "static/media/bg-texture.png": "/takholee/static/media/bg-texture.d96df2cc1c641fcc67dc.png",
     "static/media/logo.svg": "/takholee/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/takholee/index.html",
-    "main.dc069623.css.map": "/takholee/static/css/main.dc069623.css.map",
-    "main.d4f3e394.js.map": "/takholee/static/js/main.d4f3e394.js.map",
+    "main.eccecd51.css.map": "/takholee/static/css/main.eccecd51.css.map",
+    "main.59ddbb1b.js.map": "/takholee/static/js/main.59ddbb1b.js.map",
     "787.6efb526c.chunk.js.map": "/takholee/static/js/787.6efb526c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc069623.css",
-    "static/js/main.d4f3e394.js"
+    "static/css/main.eccecd51.css",
+    "static/js/main.59ddbb1b.js"
   ]
 }
